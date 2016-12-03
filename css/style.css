@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	color:$text;
+	width:100%;
+	height:100%;
+	color: #000;
+}
+.redcolor{
+	color: red;
+}
+.greencolor{
+	color: green;
+}
+
+table{
+	margin-top: 5px;
+	border-collapse: collapse;
+	border:1px solid #000;
+
+	
+}
+table tr td{
+	border:1px solid #000;
+	text-align: center;
+	padding:5px;
+	span{
+		display: inline-block;
+	}
+}
+
+.up{
+	width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 5px solid transparent;
+    border-bottom-color:black;
+}
+
+.down{
+	width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 5px solid transparent;
+    border-top-color:black;
+}

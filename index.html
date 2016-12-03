@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div ng-controller="demo">
+		<div>
+            <p>
+              <input type="text" ng-model="searchFirst" placeholder="search FirstName">
+              <input type="text" ng-model="search" placeholder="search LastName">
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <td ng-click="title='FirstName';desc=!desc">FirstName<span ng-class="{true:'up',false:'down'}[desc]"></span></td>
+                        <td ng-click="title='LastName';desc=!desc">LastName</td>
+                        <td ng-click="title='Gender';desc=!desc">Gender</td>
+                        <td ng-click="title='Salar';desc=!desc">Salar</td>
+                        <td ng-click="title='Salary';desc=!desc">Salary</td>
+                        <td ng-click="title='Birthday';desc=!desc">Birthday</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="i in home | filter:searchFirst | orderBy:title:desc">
+                        <td>{{i.FirstName}}</td>
+                        <td>{{i.LastName}}</td>
+                        <td>{{i.Gender}}</td>
+                        <td>{{i.Salar}}</td>
+                        <td>{{i.Salary}}</td>
+                        <td>{{i.Birthday}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	</div>
+	<script src="js/angular.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

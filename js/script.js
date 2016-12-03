@@ -1,0 +1,39 @@
+angular.module("myApp",[])
+.controller("demo",["$scope",function($scope){
+	var home = [
+		{
+			FirstName:"FANG",
+			LastName:"vane",
+			Gender:"Male",
+			Salar:"12333.50",
+			Salary:"12333.5",
+			Birthday:"2007-07-11"
+		},
+		{
+			FirstName:"SARA",
+			LastName:"rose",
+			Gender:"Female",
+			Salar:"232334.23",
+			Salary:"232334.2",
+			Birthday:"1997-02-03"	
+		},
+		{
+			FirstName:"AAM",
+			LastName:"hot",
+			Gender:"Male",
+			Salar:"66880.50",
+			Salary:"66880.5",
+			Birthday:"1986-03-04"	
+		},
+		{
+			FirstName:"MARK",
+			LastName:"bear",
+			Gender:"Male",
+			Salar:"68000.00",
+			Salary:"68000.0",
+			Birthday:"1968-03-22"
+		}
+	]
+	
+	$scope.home = home;
+}])	

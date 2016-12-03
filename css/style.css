@@ -31,11 +31,11 @@ table tr td{
 	border:1px solid #000;
 	text-align: center;
 	padding:5px;
-	span{
-		display: inline-block;
-	}
+	
 }
-
+table tr td span{
+	display:inline-block;
+}
 .up{
 	width: 0;
     height: 0;
